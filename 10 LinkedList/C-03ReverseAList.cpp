@@ -39,7 +39,7 @@ public:
         }
     }
     void push_back(int val)
-    { 
+    {
         Node *newNode = new Node(val);
         if (head == NULL)
         {
@@ -100,7 +100,20 @@ public:
         }
         cout << "Null" << endl;
     }
-
+    void reverse()
+    {
+        Node *curr = head;
+        Node *prev = NULL;
+        while (curr != NULL)
+        {
+            Node *next = curr->next;
+            curr->next = prev;
+            // Updations for next itr.
+            prev = curr;
+            curr = next;
+        }
+        head = prev;
+    }
 };
 int main()
 {
@@ -111,7 +124,8 @@ int main()
     ll.push_back(4);
     ll.push_back(5);
     ll.printlist();
- 
+    ll.reverse();
+    ll.printlist();
 
     return 0;
 }
