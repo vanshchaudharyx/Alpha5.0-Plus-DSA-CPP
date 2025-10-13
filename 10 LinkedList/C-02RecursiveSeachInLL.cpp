@@ -63,7 +63,7 @@ public:
     {
 
         Node *temp = head;
-        while (temp->next != tail) // We also use while (temp->next->next!=null).
+        while (temp->next != tail) // We also use while (temp->next->next!=null)
         {
             temp = temp->next;
         }
