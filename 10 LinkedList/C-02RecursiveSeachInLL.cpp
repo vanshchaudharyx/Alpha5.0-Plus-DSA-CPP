@@ -72,23 +72,7 @@ public:
         delete tail;
         tail = temp;
     }
-    // Insert in middle.
-    void insert(int val, int position)
-    {
-        Node *newNode = new Node(val);
-        Node *temp = head;
-        for (int i = 0; i < position - 1; i++)
-        {
-            temp = temp->next;
-        }
-        if (temp == NULL)
-        {
-            cout << "Invalid Position";
-            return;
-        }
-        newNode->next = temp->next;
-        temp->next = newNode;
-    } // Function to print List
+     // Function to print List
 
     void printlist()
     {
