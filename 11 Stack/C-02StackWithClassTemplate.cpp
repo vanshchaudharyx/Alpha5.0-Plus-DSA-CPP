@@ -36,7 +36,7 @@ public:
     }
 };
 int main()
-{
+{ // This stack object stores integer value.
     Stack<int> s;
     s.push(3);
     s.push(2);
@@ -47,6 +47,7 @@ int main()
         s.pop();
     }
     cout << endl;
+    // This stack object stores character value.
     Stack<char> s1;
     s1.push('h');
     s1.push('s');
