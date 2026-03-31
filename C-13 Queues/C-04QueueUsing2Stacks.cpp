@@ -16,7 +16,7 @@ public:
             s2.push(s1.top());
             s1.pop();
         }
-        s2.push(data); //(IInd Step).
+        s1.push(data); //(IInd Step).
     // Element of s1->s2.(IIIrd Step).
         while (!s2.empty())
         {
