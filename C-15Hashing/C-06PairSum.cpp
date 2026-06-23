@@ -18,7 +18,7 @@ int main()
     //             break;
     //         }
     //             }
-    // }
+    // }k
 
     // Optimized approach......
     int arr[7] = {1, 2, 7, 11, 15, 5, 9};
